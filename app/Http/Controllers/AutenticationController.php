@@ -19,6 +19,7 @@ class AutenticationController extends Controller implements AutenticacionContrac
     }
 
     public function log(Request $request):string {
-        return $this->domain->log(new UserVM($request->get('userName'), $request->get('password')));
+        return "Operacion no soportada aun";
+        //return $this->domain->log(new UserVM($request->get('userName'), $request->get('password')));
     }
 }
